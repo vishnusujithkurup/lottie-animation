@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/lottie-animation/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/lottie-animation/static/js/main.59c0aa20.chunk.js",
+    "main.js.map": "/lottie-animation/static/js/main.59c0aa20.chunk.js.map",
+    "runtime-main.js": "/lottie-animation/static/js/runtime-main.9d3fb840.js",
+    "runtime-main.js.map": "/lottie-animation/static/js/runtime-main.9d3fb840.js.map",
+    "static/js/2.0fe6f404.chunk.js": "/lottie-animation/static/js/2.0fe6f404.chunk.js",
+    "static/js/2.0fe6f404.chunk.js.map": "/lottie-animation/static/js/2.0fe6f404.chunk.js.map",
+    "static/js/3.de47cc44.chunk.js": "/lottie-animation/static/js/3.de47cc44.chunk.js",
+    "static/js/3.de47cc44.chunk.js.map": "/lottie-animation/static/js/3.de47cc44.chunk.js.map",
+    "index.html": "/lottie-animation/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/lottie-animation/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.0fe6f404.chunk.js.LICENSE.txt": "/lottie-animation/static/js/2.0fe6f404.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9d3fb840.js",
+    "static/js/2.0fe6f404.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.59c0aa20.chunk.js"
+  ]
+}
