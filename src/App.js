@@ -5,22 +5,29 @@ import { Player } from '@lottiefiles/react-lottie-player';
 function App() {
   
   const [frame, setFrame] = useState(0);
-  const [formVal, setFormVal] = useState(0);
+  const [startFrame, setStartFrame] = useState(0);
+  const [endFrame, setEndFrame] = useState(0);
   const [instance, setInstance] = useState(null);
 
-  const handleChange = (e) => {
+  const getValidFrame = (e) => {
     let cur = e.target.value;
     if (isNaN(cur))
       cur = 0;
     cur = Math.max(cur, 0);
     cur = Math.min(cur, 20);
-    setFormVal(cur);
+    return cur;
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    instance.goToAndStop(formVal, true);
-    setFormVal(0);
+    if (startFrame >= endFrame) {
+      alert('Invalid sequence!');
+      return;
+    }
+
+    instance.playSegments([startFrame, endFrame], true);
+    setStartFrame(0);
+    setEndFrame(0);
   };
 
   return (
@@ -29,12 +36,13 @@ function App() {
 
       <form onSubmit={handleSubmit}>
         <label>
-          <input type="text" value={formVal} onChange={handleChange} />
+          <input type="text" value={startFrame} onChange={(e) => setStartFrame(getValidFrame(e))} />
+          <input type="text" value={endFrame} onChange={(e) => setEndFrame(getValidFrame(e))} />
         </label>
         <input type="submit" value="Set"/>
       </form>
 
-      <button onClick={() => instance.play()}> Play </button>
+      <button onClick={() => instance.playSegments([0, 20], true)}> Play </button>
 
       <Player
         lottieRef={instance => {
@@ -42,7 +50,7 @@ function App() {
         }}
         onEvent={e => {
           if (e === 'frame') {
-            setFrame(Math.round(instance.currentFrame));
+            setFrame(Math.round(instance.currentRawFrame));
           }
         }}
         autoplay={true}
