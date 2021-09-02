@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/lottie-animation/static/css/main.a617e044.chunk.css",
-    "main.js": "/lottie-animation/static/js/main.3618a47d.chunk.js",
-    "main.js.map": "/lottie-animation/static/js/main.3618a47d.chunk.js.map",
+    "main.js": "/lottie-animation/static/js/main.fa49f165.chunk.js",
+    "main.js.map": "/lottie-animation/static/js/main.fa49f165.chunk.js.map",
     "runtime-main.js": "/lottie-animation/static/js/runtime-main.9d3fb840.js",
     "runtime-main.js.map": "/lottie-animation/static/js/runtime-main.9d3fb840.js.map",
     "static/js/2.0fe6f404.chunk.js": "/lottie-animation/static/js/2.0fe6f404.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.9d3fb840.js",
     "static/js/2.0fe6f404.chunk.js",
     "static/css/main.a617e044.chunk.css",
-    "static/js/main.3618a47d.chunk.js"
+    "static/js/main.fa49f165.chunk.js"
   ]
 }
