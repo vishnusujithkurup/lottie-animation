@@ -14,7 +14,7 @@ function App() {
     if (isNaN(cur))
       cur = 0;
     cur = Math.max(cur, 0);
-    cur = Math.min(cur, 20);
+    cur = Math.min(cur, 42);
     return cur;
   };
 
@@ -42,7 +42,7 @@ function App() {
         <input type="submit" value="Set"/>
       </form>
 
-      <button onClick={() => instance.playSegments([0, 20], true)}> Play </button>
+      <button onClick={() => instance.playSegments([0, 42], true)}> Play </button>
 
       <Player
         lottieRef={instance => {
@@ -56,7 +56,7 @@ function App() {
         autoplay={true}
         loop={true}
         controls={true}
-        src={require('./assets/yoga.json')}
+        src={require('./assets/Vriks_Rishi.json')}
         style={{height: '400px', width: '400px'}}
       >
       </Player>
